@@ -72,7 +72,39 @@
             <label for="mes" id="mes" name="mes">Mes:</label>
             <!-- type="month": permite seleccionar un mes -->
             <input type="month" id="mes" name="mes"><br><br>
+            <label for="modulos" id="modulos" name="modulos">Módulos:</label>
+            <!-- select: crea un menú desplegable; multiple: permite seleccionar varias opciones -->
+            <select id="modulos" name="modulos" multiple>
+                <!-- optgroup: agrupa opciones dentro del menú desplegable -->
+                <optgroup label="Grado medio">
+                    <!-- option: define una opción dentro del menú desplegable -->
+                    <option value="modulo1">Sistemas Microinformáticos y Redes</option>
+                </optgroup>
+                <optgroup label="Grado superior">
+                <!-- selected: especifica que la opción está seleccionada por defecto -->
+                    <option value="modulo2" selected>Desarrollo de Aplicaciones Web</option>
+                    <option value="modulo3">Desarrollo de Aplicaciones Multiplataforma</option>
+                    <option value="modulo4">Administración de Sistemas Informáticos en Red</option>
+                </optgroup>
+            </select><br><br>
+            <label for="comentarios">Comentarios:</label><br>
+            <!-- textarea: crea un área de texto para comentarios; rows: especifica el número de filas visibles; cols: especifica el número de columnas visibles -->
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
         </fieldset>
+        <!-- input type="submit": envía los datos del formulario -->
+        <br><input type="submit" value="Enviar">
+        <!-- type="reset": el botón restablece los valores del formulario -->
+        <input type="reset" value="Restablecer">
+        <!-- type="button": sirve para ejecutar acciones JavaScript -->
+        <input type="button" value="Botón"><br><br>
+        <!-- input type="image": botón con imagen que envía el formulario -->
+        <input type="image" src="https://cdn-icons-png.flaticon.com/512/91/91848.png" alt="Enviar formulario" width="38" height="38"><br><br>
+        <!-- button: crea un botón; type="submit": envía los datos del formulario y permite contenido HTML adicional--> 
+        <button type="submit">Enviar</button>
+        <!-- type="reset": restablece los valores del formulario y permite contenido HTML adicional -->
+        <button type="reset">Restablecer</button>
+        <!-- type="button": sirve para ejecutar acciones JavaScript y permite contenido HTML adicional -->
+        <button type="button">Botón</button>
     </form>
 </body>
 </html>
