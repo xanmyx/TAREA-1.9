@@ -10,8 +10,21 @@
         <form action="index.html" method="get">
         <!-- fieldset: agrupa elementos relacionados dentro de un formulario -->
         <fieldset>
-            <!-- legend: crea un título para el formulario -->
+            <!-- legend: título para el fieldset -->
             <legend>Datos personales by Andrea</legend>
+            <!-- label: crea una etiqueta para un campo de entrada; for: asocia la etiqueta con el campo de entrada correspondiente -->
+            <label for="nombre">Nombre:</label>
+            <!-- input: crea un campo de entrada de texto; type="text": el campo de entrada permite insertar texto; id: identifica de manera única el campo de entrada; placeholder: muestra un texto de ayuda en el campo de entrada; required: especifica que el campo es obligatorio; autofocus: especifica que el campo debe tener el foco al cargar la página; size: especifica el ancho del campo; maxlength: especifica la longitud máxima de caracteres -->
+            <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required autofocus size="30" maxlength="40"><br><br>
+            <label for="contraseña">Contraseña:</label>
+            <!-- type="password": el campo de entrada permite insertar texto oculto; minlength: especifica la longitud mínima de caracteres -->
+            <input type="password" id="contraseña" name="contraseña" minlength="8"><br><br>
+            <label for="email">Correo electrónico:</label>
+            <!-- type="email": el campo de entrada permite insertar direcciones de correo electrónico -->
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="telefono">Teléfono:</label>
+            <!-- type="tel": el campo de entrada permite insertar números de teléfono; pattern: especifica un patrón de validación -->
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}"><br><br>
         </fieldset>
     </form>
 </body>
