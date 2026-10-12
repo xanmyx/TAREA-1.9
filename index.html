@@ -99,12 +99,25 @@
         <input type="button" value="Botón"><br><br>
         <!-- input type="image": botón con imagen que envía el formulario -->
         <input type="image" src="https://cdn-icons-png.flaticon.com/512/91/91848.png" alt="Enviar formulario" width="38" height="38"><br><br>
-        <!-- button: crea un botón; type="submit": envía los datos del formulario y permite contenido HTML adicional--> 
+        <!-- button type="submit": envía los datos del formulario y permite contenido HTML adicional--> 
         <button type="submit">Enviar</button>
-        <!-- type="reset": restablece los valores del formulario y permite contenido HTML adicional -->
+        <!-- button type="reset": restablece los valores del formulario y permite contenido HTML adicional -->
         <button type="reset">Restablecer</button>
-        <!-- type="button": sirve para ejecutar acciones JavaScript y permite contenido HTML adicional -->
-        <button type="button">Botón</button>
+        <!-- button type="button": sirve para ejecutar acciones JavaScript y permite contenido HTML adicional -->
+        <button type="button">Botón</button><br><br>
+    </form>
+    <form action="https://es.wikipedia.org/w/index.php" method="get">
+        <label for="search">Buscar en Wikipedia:</label>
+       <!-- type="search": permite introducir términos de búsqueda; list: asocia el campo de entrada con una lista de opciones --> 
+        <input type="search" id="search" name="search" list="sugerencias">
+        <!-- datalist: define una lista de opciones para el campo de entrada -->
+        <datalist id="sugerencias">
+            <!-- option: define una opción dentro de la lista -->
+            <option value="Formulario web">
+            <option value="HTML">
+            <option value="Protocolo de transferencia de hipertexto">
+        </datalist>
+        <input type="submit" value="Buscar">
     </form>
 </body>
 </html>
