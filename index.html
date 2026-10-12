@@ -7,7 +7,7 @@
 </head>
 <body>
     <!-- form: crea un formulario -->
-        <form action="index.html" method="post">
+        <form action="index.html" method="get">
         <!-- fieldset: agrupa elementos relacionados dentro de un formulario -->
         <fieldset>
             <!-- legend: título para el fieldset -->
@@ -140,5 +140,7 @@
     </form>
     <h2>¿Qué problema de seguridad descubres en el historial por haber enviado la inscripción con GET? ¿Qué método recomienda el artículo para un formulario como este y por qué?</h2>
     <p>El problema de seguridad es que los datos del formulario son visibles en la URL, lo que puede exponer información sensible como contraseñas o datos personales. Se recomienda usar el método POST ya que los datos envían en el cuerpo de la solicitud HTTP y no son visibles en la URL.</p>
+    <h2>¿Qué ocurre al enviar la inscripción con POST? Según el artículo, ¿qué tendría que haber en el servidor para procesar esos datos?</h2>
+    <p>Al enviar la inscripción con POST salta el error 405 Method Not Allowed. Para procesar esos datos, el servidor necesitaría un script o programa que pudiera procesar los datos enviados en el formulario.</p>
 </body>
 </html>
