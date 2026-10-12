@@ -25,6 +25,18 @@
             <label for="telefono">Teléfono:</label>
             <!-- type="tel": el campo de entrada permite insertar números de teléfono; pattern: especifica un patrón de validación -->
             <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}"><br><br>
+            <label for="fecha">Fecha de nacimiento:</label>
+            <!-- type="date": el campo de entrada permite insertar fechas -->
+            <input type="date" id="fecha" name="fecha"><br><br>
+            <label for="foto">Fotografía:</label>
+            <!-- type="file": el campo de entrada permite seleccionar archivos -->
+            <input type="file" id="foto" name="foto"><br><br>
+            <label for="curso">Curso:</label>
+            <!-- value: especifica el valor del campo; readonly: especifica que el campo es de solo lectura -->
+            <input type="text" id="curso" name="curso" value="2026-2027" readonly><br><br>
+            <label for="centro">Centro:</label>
+            <!-- disabled: especifica que el campo está deshabilitado -->
+            <input type="text" id="centro" name="centro" value="IES La Asunción" disabled><br><br>
         </fieldset>
     </form>
 </body>
